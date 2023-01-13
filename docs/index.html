@@ -3,7 +3,7 @@
  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scae=1.0, minimum-scale=1.0">
     <title>Mariangel Socorro</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico"/>
@@ -11,10 +11,163 @@
     <meta name="keywords" content="persona, desarrollador web, profesional"/>
  </head>
  <body>
-    <figure>
-        <img src="./img/me.jpg" alt="imagen del desarrollador" />
-        <figcaption>Mariangel Socorro </figcaption>
-    </figure>
+   <div class="contenedor-header">
+      <header>
+          <div class="logo">
+              <a href="#">Inicio</a>
+          </div>
+          <nav id="nav">
+              <ul>
+                  <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                  <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                  <li><a download="CV.MariangelS.pdf" href="./pdf/CV.MariangelS.pdf" target="_blank" rel="noopener noreferrer" onclick="seleccionar()">DESCARGAR CV</a></li>
+              </ul>
+          </nav>
+          <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+              <i class="fa-solid fa-bars"></i>
+          </div>
+      </header>
+  </div>
+   <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+          <div class="contenedor-img">
+              <img src="./img/me.jpg" alt="imagen del desarrollador">
+          </div>
+          <h1>Mariangel Socorro</h1>
+          <h2>Administrador - Desarrollador Web (Aprendiz)</h2>
+      </div>
+    </section>
+    <hr>
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p><span>Hola, soy Mariangel Socorro </span> soy profesional en Administración, Mención: Banca y Seguros, graduada en la universidad Dr. Rafael Belloso Chacín en Maracaibo-Venezuela en el año 2017 y actualmente soy aprendiz de Desarrollo Web Frondend en el instituto BIT Bogotá Institute Thecnology ubicada en Bogotá-Colombia.</p>
+        <div class="fila">
+            <div class="col">
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li>
+                        <strong>Nombre Completo</strong>
+                        Mariangel Beatriz Socorro Urdaneta
+                    </li>
+                    <li>
+                        <strong>Pais de origen</strong>
+                        Venezuela
+                    </li>
+                    <li>
+                        <strong>Pais de Residencia</strong>
+                        Colombia
+                    </li>
+                    <li>
+                        <strong>Fecha de nacimiento</strong>
+                        27-12-1994
+                    </li>
+                    <li>
+                        <strong>Intereses</strong>
+                        Redes sociales, musica, animales.
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Datos de Contacto</h3>
+                <ul>
+                    <li>
+                        <strong>Teléfono</strong>
+                        +57 3242056137
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        maribsu1@gmail.com
+                    </li>
+                    <li>
+                        <strong>Linkedin</strong>
+                        <a href="https://www.linkedin.com/in/mariangel-beatriz-socorro-urdaneta-92b241145/" target="_blank" rel="noopener noreferrer"> Mariangel Socorro</a>
+                    </li>
+                    <li>
+                        <strong>Twitter</strong>
+                        <a href="https://www.Twitter.com/maribsu" target="_blank" rel="noopener noreferrer"> @Maribsu</a>
+                    </li>
+                    <li>
+                        <strong>Instagram</strong>
+                        <a href="https://www.Instagram.com/mariangelsocorro" target="_blank" rel="noopener noreferrer"> @Mariangelsocorro</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <hr>
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación</h3>
+                <div class="item izq">
+                    <h4>Desarrollador Web Frontend</h4>
+                    <span class="casa">BIT Bogotá Institute Thecnology</span>
+                    <span class="fecha">2022 - En curso</span>
+                    <p>Conocimientos de HTML, CSS, JavaScript y capacidades en el uso de frameworks. </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Administración. Mención: Banca y Seguros.</h4>
+                    <span class="casa">Universidad Dr Rafael Belloso Chacín (Maracaibo-Venezuela)</span>
+                    <span class="fecha">2012 - 2017</span>
+                    <p>Formación administrativa y financiera, relacionado con el mundo del negocio bancario y asegurador, capacitado para diseñar, planificar y ejecutar planes y proyectos relacionados con el sector financiero y asegurador.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Bachillerato</h4>
+                    <span class="casa">Instituto Juventud (Maracaibo-Venezuela)</span>
+                    <span class="fecha">2005 - 2008</span>
+                    <p>Educación basica diversificada y bachillerato en ciencias.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col derecha">
+                <h3>Experiencia Laboral</h3>
+                <div class="item der">
+                    <h4>Ventas</h4>
+                    <span class="casa">Market Mix</span>
+                    <span class="fecha">2022 - 2022</span>
+                    <p>Ventas de seguros automoviles vía telefonica.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Atención al cliente</h4>
+                    <span class="casa">Atento Colombia SA.</span>
+                    <span class="fecha">2018 - 2020</span>
+                    <p>Atención y servicio al ciente, retenciones, ventas y facturación para la campaña ETB hogares.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Asistente Administrativo</h4>
+                    <span class="casa">Contraloria General del estado Zulia (Maracaibo-Venezuela)</span>
+                    <span class="fecha">2017 - 20218</span>
+                    <p>Practicas profesionales, redaccion de informes tecnicos, auditorias administrativas, analisis de estados de cuentas, archivo y redacción de actas fiscales.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+<footer>
+    <p>Todos los derechos reservados.</p>
+ </footer>
     <script src="./js/main.js"></script>
-  </body>
+</body>
 </html>

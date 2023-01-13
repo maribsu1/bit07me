@@ -1,3 +1,1 @@
- 'use strict'
-
- console.log ("Mariangel Socorro")
+console.log ('Mariangel Socorro')
