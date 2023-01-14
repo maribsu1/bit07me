@@ -46,9 +46,9 @@ html{
     color: #00ffff;
 }
 .nav-responsive{
-    background-color: #00ffff;
+    background-color: #1CB698;
     color:#fff;
-    padding: 10px 15px;
+    padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
@@ -261,7 +261,7 @@ footer{
     position: relative;
     width: 100%;
 }
-/* RESPONSIVE */
+/* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
         display: none;
@@ -292,6 +292,7 @@ footer{
     .sobremi .fila .col{
         width: fit-content;
     }
+
     .curriculum .fila{
         display: block;
     }
@@ -300,11 +301,5 @@ footer{
     }
     .curriculum .fila .derecha{
         margin-left: 20px;
-    }
-    .contacto .fila{
-        display: block;
-    }
-    .contacto .fila .col{
-        width: 100%;
     }
 }
