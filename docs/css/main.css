@@ -261,3 +261,47 @@ footer{
     position: relative;
     width: 100%;
 }
+/* RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: block;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        width: 200px;
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:980px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 80%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 10px;
+    }
+
+}
