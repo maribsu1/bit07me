@@ -54,7 +54,7 @@ html{
     display: none;
 }
 .inicio{
-    background: linear-gradient(to top, rgb(0, 0, 0), rgb(206, 2, 206));
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(147, 3, 204));
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -62,24 +62,24 @@ html{
     align-items: center;
 }
 .inicio .contenido-banner{
-    padding: 20px;
+    padding: 85px;
     background-color: #0000009d;
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 6px;
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
     border: 6px solid #1fa0a0;
     display: block;
-    width: 80%;
+    width: 69%;
     margin: auto;
     border-radius: 100%;
 }
 .inicio .contenido-banner h1{
-    margin-top: 40px;
-    font-size: 42px;
+    margin-top: 32px;
+    font-size: 35px;
     font-family: 'Righteous';
 }
 .inicio .contenido-banner h2{
@@ -99,10 +99,11 @@ html{
     margin: auto;
 }
 .sobremi h2{
-    font-size: 48px;
+    font-size: 40px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    margin-top: 30px;
 
 }
 .sobremi .contenido-seccion p{
@@ -122,7 +123,7 @@ html{
     width: 50%;
 }
 .sobremi .fila .col h3{
-    font-size: 28px;
+    font-size: 25px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
@@ -157,7 +158,7 @@ html{
     margin: auto;
 }
 .curriculum h2{
-    font-size: 48px;
+    font-size: 40px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
@@ -254,14 +255,44 @@ html{
 }
 
 footer{
-    background-color: #252A2E;
+    background: linear-gradient(to top, rgb(147, 3, 204), rgb(0, 0, 0));
     color: #fff;
-    padding: 20px 0 20px 0;
+    padding: 10px 0 10px 0;
     text-align: center;
     position: relative;
     width: 100%;
 }
-/* SECCION RESPONSIVE */
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
         display: none;
