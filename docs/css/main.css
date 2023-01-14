@@ -48,7 +48,7 @@ html{
 .nav-responsive{
     background-color: #00ffff;
     color:#fff;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
@@ -261,7 +261,7 @@ footer{
     position: relative;
     width: 100%;
 }
-/* SECCION RESPONSIVE */
+/* RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
         display: none;
