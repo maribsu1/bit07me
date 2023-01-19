@@ -9,7 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 .contenedor-header{
-    background: #1e2326;
+    background: #000000de;
     position: fixed;
     width: 100%;
     top: 0;
@@ -25,7 +25,7 @@ html{
     padding: 15px 20px;
 }
 .contenedor-header header .logo a{
-    font-family: 'Righteous';
+    font-family: 'Trebuchet MS';
     font-size: 36px;
     color: #00ffff;
     text-decoration: none;
@@ -36,7 +36,7 @@ html{
 }
 .contenedor-header header nav ul li a{
     text-align: none;
-    color: #fff;
+    color: white;
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
@@ -44,17 +44,19 @@ html{
 }
 .contenedor-header header nav ul li a:hover{
     color: #00ffff;
+    font-size: 18px;
 }
 .nav-responsive{
-    background-color: #1CB698;
-    color:#fff;
+    background-color: #00ffff;
+    color: white;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
 }
 .inicio {
-    background: linear-gradient(to top, rgb(0, 0, 0)10%, rgb(114, 3, 204)80%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.829), rgba(114, 3, 204, 0.829)),
+    url(../img/fondo.jpg);    
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -62,18 +64,19 @@ html{
     align-items: center;
 }
 .inicio .contenido-banner{
-    padding: 55px;
-    background-color: #00000073;
+    padding: 16px;
+    background-color: #00000010;
     max-width: 700px;
     margin: auto;
+    margin-top: 96px;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 3px;
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 6px solid #1fa0a0;
+    border: 6px solid #00ffffd8;
     display: block;
-    width: 69%;
+    width: 40%;
     margin: auto;
     border-radius: 100%;
 }
@@ -91,7 +94,7 @@ html{
 }
 .sobremi{
     background-color: #000000;
-    color: #fff;
+    color: white;
     padding: 50px 20px;
 }
 .sobremi .contenido-seccion{
@@ -100,7 +103,7 @@ html{
 }
 .sobremi h2{
     font-size: 40px;
-    font-family: 'Righteous';
+    font-family: 'Trebuchet MS';
     text-align: center;
     padding: 20px 0;
     margin-top: 30px;
@@ -124,7 +127,7 @@ html{
 }
 .sobremi .fila .col h3{
     font-size: 25px;
-    font-family: 'Righteous';
+    font-family: 'Trebuchet MS';
     margin-bottom: 25px;
 }
 .sobremi .fila .col ul{
@@ -159,7 +162,7 @@ html{
 }
 .curriculum h2{
     font-size: 40px;
-    font-family: 'Righteous';
+    font-family: 'Trebuchet MS';
     text-align: center;
     padding: 20px 0;
 
@@ -174,7 +177,7 @@ html{
 }
 .curriculum .fila .col h3{
     font-size: 28px;
-    font-family: 'Righteous';
+    font-family: 'Trebuchet MS';
     margin-bottom: 25px;
 }
 .curriculum .fila .izquierda{
@@ -186,7 +189,7 @@ html{
 .curriculum .fila .item{
     padding: 25px;
     margin-bottom: 30px;
-    background-color: #252A2E;
+    background-color: rgba(90, 90, 90, 0.281);
     position: relative;
 }
 .curriculum .fila .item h4{
