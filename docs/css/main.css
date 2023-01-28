@@ -89,9 +89,7 @@ html{
     font-size: 15px;
     font-weight: normal;
 }
-.inicio .contenido-banner .redes a:hover{
-    background-color: #1CB698;
-}
+
 .sobremi{
     background-color: #000000;
     color: rgb(255, 255, 255);
@@ -151,6 +149,8 @@ html{
 .curriculum{
     background-color: #000000;
     color: #fff;
+    padding: 50px 20px;
+
 }
 .curriculum .contenido-seccion{
     max-width: 1100px;
@@ -336,7 +336,6 @@ footer .arriba{
     .sobremi .fila .col{
         width: fit-content;
     }
-
     .curriculum .fila{
         display: block;
     }
