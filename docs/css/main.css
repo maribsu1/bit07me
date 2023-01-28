@@ -146,15 +146,11 @@ html{
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
-}
-.sobremi .fila .col .contenedor-intereses{
-    display: flex;
-    flex-wrap: wrap;
+   
 }
 .curriculum{
     background-color: #000000;
     color: #fff;
-    padding: 50px 20px;
 }
 .curriculum .contenido-seccion{
     max-width: 1100px;
