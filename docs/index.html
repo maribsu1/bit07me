@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mariangel Socorro</title>
+    <title>Developer Frontend</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico"/>
@@ -15,15 +15,19 @@
    <div class="contenedor-header">
       <header>
           <div class="logo">
-              <a href="#">Inicio</a>
+              <a href="#"><i class="fas fa-laptop-house" aria-hidden="true"></i> Inicio</a>
           </div>
           <nav id="nav">
               <ul>
                   <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                  <hr>
+                  <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                  <hr>
                   <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                  <li><a href="https://maribsu1.github.io/bit06exercises/" onclick="seleccionar()">PROYECTOS</a></li>
+                  <hr>            
+                  <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                  <hr>
                   <li><a href="#sobremi" onclick="seleccionar()">CONTACTO</a></li>
-                  <li><a download="CV.MariangelS.pdf" href="./pdf/CV.MariangelS.pdf" target="_blank" rel="noopener noreferrer" onclick="seleccionar()">DESCARGAR CV</a></li>
               </ul>
           </nav>
           <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -42,7 +46,7 @@
     </section>
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-        <h2>Sobre Mí</h2>
+        <h2>SOBRE MÍ</h2>
         <p><span>Hola, soy Mariangel Socorro </span> soy profesional en Administración, Mención: Banca y Seguros, graduada en la universidad Dr. Rafael Belloso Chacín en Maracaibo-Venezuela en el año 2017 y actualmente aprendiz de Desarrollo Web Frontend en el instituto BIT Bogotá Institute Thecnology ubicada en Bogotá-Colombia. Continuamente aprendiendo y adquiriendo nuevas habilidades en función a las actuales y futuras demandas y tendencias tecnológicas en el campo del diseño y desarrollo de páginas y aplicaciones web en general.</p>      
         <div class="fila">
             <div class="col">
@@ -95,16 +99,109 @@
                     </li>
                 </ul>
             </div>
+            </div>    
+        </div>
+        </section>
+        <section class="habilidades" id="habilidades">
+            <br>
+            <br>
+            <div class="contenido-seccion">
+                <h2>HABILIDADES</h2>
+                <div class="fila">
+                    <div class="col">
+                        <h3>Habilidades Técnicas</h3>
+                        <div class="habilidad">
+                            <span>HTML</span>
+                            <div class="barra-habilidad">
+                                <div class="progreso">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <span>CSS</span>
+                            <div class="barra-habilidad">
+                                <div class="progreso">
+                                    <span>55%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <span>GitHub</span>
+                            <div class="barra-habilidad">
+                                <div class="progreso">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <span>JavaScript</span>
+                            <div class="barra-habilidad">
+                                <div class="progreso">
+                                    <span>40%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <span>React Js</span>
+                            <div class="barra-habilidad">
+                                <div class="progreso">
+                                    <span>25%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3>Habilidades Blandas</h3>
+                        <div class="habilidad">
+                            <span>Capacidad de respuesta</span>
+                            <div class="barra-habilidad">
+                                <div class="progreso">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <span>Adaptabilidad</span>
+                            <div class="barra-habilidad">
+                                <div class="progreso">
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <span>Atención a los detalles</span>
+                            <div class="barra-habilidad">
+                                <div class="progreso">
+                                    <span>99%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <span> Compromiso </span>
+                            <div class="barra-habilidad">
+                                <div class="progreso">
+                                    <span>100%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <span>Comunicación asertiva</span>
+                            <div class="barra-habilidad">
+                                <div class="progreso">
+                                    <span>94%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div style="text-align:center;" >
-            <video src="./img/banner.mp4" autoplay muted loop width="95%"  ></video>    
-        </div>
+        </section>
     </div>
     </section>
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
-        <h2>Curriculum</h2>
+        <h2>CURRICULUM</h2>
         <div class="fila">
             <div class="col izquierda">
                 <h3>Educación</h3>
@@ -167,6 +264,43 @@
                 </div>
             </div>
         </div>
+        <button class="boton"> 
+            <span class="overlay"></span>
+            <a download="cv_mariangels.pdf" href="./pdf/CV.MariangelS.pdf" target="_blank" rel="noopener noreferrer"> Descargar CV <i class="fa-solid fa-download"></i> </a>
+        </button>
+        </div>
+    </section>
+    <div style="text-align:center;" >
+        <video src="./img/banner.mp4" autoplay muted loop width="80%"></video>    
+    </div>
+    <br>
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <a href="https://maribsu1.github.io/bit06exercises/" target="_blank" rel="noopener noreferrer" class="proyecto">
+                    <img src="./img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollo Web</h3>
+                        <p>Login</p>
+                    </div>
+                </a>
+                <a href="https://maribsu1.github.io/bit06exercises/ejercicios.html" target="_blank" rel="noopener noreferrer" class="proyecto">
+                    <img src="./img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollo Web</h3>
+                        <p>Ejercicios de practica JavaScript</p>
+                    </div>
+                </a>
+                <a href="https://maribsu1.github.io/bit08react/" target="_blank" rel="noopener noreferrer" class="proyecto">
+                    <img src="./img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollo Web</h3>
+                        <p>Listado React Js</p>
+                    </div>
+                </a>
+                </div>
+            </div>
         </div>
     </section>
     <footer>

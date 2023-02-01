@@ -7,6 +7,7 @@
 }
 html{
     scroll-behavior: smooth;
+    background-color: #000000;
 }
 .contenedor-header{
     background: #000000de;
@@ -25,10 +26,13 @@ html{
     padding: 15px 20px;
 }
 .contenedor-header header .logo a{
-    font-family: 'Trebuchet MS';
-    font-size: 36px;
+    font-size: 30px;
     color: #00ffff;
     text-decoration: none;
+}
+.contenedor-header header .logo a:hover{
+    color: white;
+    font-size: 31px;
 }
 .contenedor-header header ul{
     display: flex;
@@ -44,7 +48,7 @@ html{
 }
 .contenedor-header header nav ul li a:hover{
     color: #00ffff;
-    font-size: 18px;
+    font-size: 17px;
 }
 .nav-responsive{
     background-color: #00ffff;
@@ -55,7 +59,7 @@ html{
     display: none;
 }
 .inicio {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.856), rgba(114, 3, 204, 0.767)),
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(118, 2, 250, 0.726), rgb(0, 0, 0)),
     url(../img/fondo.jpg);    
     background-size: cover;
     height: 100vh;
@@ -74,10 +78,15 @@ html{
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 6px solid #00ffffd8;
+    border: 6px solid #00fff2d8;
     display: block;
     width: 40%;
     margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner img:hover{
+    border: 8px solid #00fff2d8;
+    width: 45%;
     border-radius: 100%;
 }
 .inicio .contenido-banner h1{
@@ -89,7 +98,6 @@ html{
     font-size: 15px;
     font-weight: normal;
 }
-
 .sobremi{
     background-color: #000000;
     color: rgb(255, 255, 255);
@@ -101,11 +109,13 @@ html{
 }
 .sobremi h2{
     font-size: 40px;
-    font-family: 'Trebuchet MS';
     text-align: center;
     padding: 20px 0;
     margin-top: 30px;
-
+}
+.sobremi h2:hover{
+    color: #00ffff;
+    font-size: 41px;
 }
 .sobremi .contenido-seccion p{
     font: 18px;
@@ -113,7 +123,7 @@ html{
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
-    color: #04bdb3;
+    color: #0ab7ce;
     font-weight: bold;
 }
 .sobremi .fila{
@@ -125,7 +135,6 @@ html{
 }
 .sobremi .fila .col h3{
     font-size: 25px;
-    font-family: 'Trebuchet MS';
     margin-bottom: 25px;
 }
 .sobremi .fila .col ul{
@@ -144,13 +153,156 @@ html{
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
-   
+}
+.habilidades{
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(141, 1, 255, 0.74), rgb(0, 0, 0)),
+    url(../img/bg.png);    
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    align-items: center;
+}
+.habilidades .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+.habilidades h2:hover{
+    color: #00ffff;
+    font-size: 41px;
+}
+.habilidades .fila{
+    display: flex;
+}
+.habilidades .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.habilidades .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.habilidades .habilidad > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.habilidades .habilidad .barra-habilidad{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.habilidades .habilidad .progreso{
+    background-color: #03a5bb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.habilidades .habilidad .barra-habilidad span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #03a5bb;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+.habilidades .habilidad .html{
+    width: 0%;
+    animation: 2s html forwards;
+}
+@keyframes html {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+.habilidades .habilidad .css{
+    width: 0%;
+    animation: 2s css forwards;
+}
+@keyframes css {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.habilidades .habilidad .github{
+    width: 0%;
+    animation: 2s github forwards;
+}
+@keyframes github {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.habilidades .habilidad .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 40%;}
+}
+.habilidades .habilidad .react{
+    width: 0%;
+    animation: 2s react forwards;
+}
+@keyframes react {
+    0%{width: 0%;}
+    100%{width: 25%;}
+}
+.habilidades .habilidad .respuesta{
+    width: 0%;
+    animation: 2s respuesta forwards;
+}
+@keyframes respuesta {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+.habilidades .habilidad .adaptabilidad{
+    width: 0%;
+    animation: 2s adaptabilidad forwards;
+}
+@keyframes adaptabilidad {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+.habilidades .habilidad .detalles{
+    width: 0%;
+    animation: 2s detalles forwards;
+}
+@keyframes detalles {
+    0%{width: 0%;}
+    100%{width: 99%;}
+}
+.habilidades .habilidad .compromiso{
+    width: 0%;
+    animation: 2s compromiso forwards;
+}
+@keyframes compromiso {
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+.habilidades .habilidad .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 94%;}
 }
 .curriculum{
     background-color: #000000;
     color: #fff;
     padding: 50px 20px;
-
 }
 .curriculum .contenido-seccion{
     max-width: 1100px;
@@ -158,10 +310,12 @@ html{
 }
 .curriculum h2{
     font-size: 40px;
-    font-family: 'Trebuchet MS';
     text-align: center;
     padding: 20px 0;
-
+}
+.curriculum h2:hover{
+    color: #00ffff;
+    font-size: 41px;
 }
 .curriculum .fila{
     display: flex;
@@ -173,7 +327,6 @@ html{
 }
 .curriculum .fila .col h3{
     font-size: 28px;
-    font-family: 'Trebuchet MS';
     margin-bottom: 25px;
 }
 .curriculum .fila .izquierda{
@@ -185,7 +338,7 @@ html{
 .curriculum .fila .item{
     padding: 25px;
     margin-bottom: 30px;
-    background-color: rgba(90, 90, 90, 0.281);
+    background-color: rgba(48, 47, 47, 0.281);
     position: relative;
 }
 .curriculum .fila .item h4{
@@ -194,7 +347,6 @@ html{
 }
 .curriculum .fila .item .casa{
     color: #ffffff80;
-    font-family: 'Trebuchet MS';
     font-size: 22px;
     font-weight: bold;
     display: block;
@@ -253,9 +405,108 @@ html{
     position: relative;
     bottom: 4px;
 }
+.curriculum button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
 
+.boton a{
+    color: #ffffff; 
+    text-decoration: none;   
+}
+
+.curriculum button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0ab7ce;
+    z-index: -1;
+    transition: 0.6s;
+}
+.curriculum button:hover .overlay{
+    width: 100%;
+}
+.proyectos{
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(80, 0, 185, 0.726), rgb(0, 0, 0)),
+    url(../img/bg3.jpg);    
+    background-size: cover;
+    color: #fff;
+    padding: 50px 20px;
+}
+.proyectos .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.proyectos h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0;
+}
+.proyectos h2:hover{
+    color: #00ffff;
+    font-size: 41px;
+
+}
+.proyectos .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.proyectos .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.proyectos .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.proyectos .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(0, 255, 204, 0.8), rgba(0, 0, 0, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.proyectos .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+    color: white;
+}
+.proyectos .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.proyectos .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+    color: white;
+}
+.proyectos .galeria .proyecto .overlay:hover p{
+    margin-bottom: 0px;
+    color: white;
+}
 footer{
-    background: linear-gradient(to top, rgb(114, 3, 204), rgb(0, 0, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.938), rgb(0, 0, 0));
     color: #fff;
     padding: 10px 0 10px 0;
     text-align: center;
@@ -278,6 +529,13 @@ footer .redes a{
     font-size: 20px;
     transition: .3s;
 }
+footer .redes a:hover{
+    color: rgb(14, 180, 202);
+    border: 1px solid rgb(14, 180, 202);
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+}
 footer .arriba{
     display: block;
     width: 50px;
@@ -292,10 +550,18 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+footer .arriba:hover{
+    display: block;
+    width: 53px;
+    height: 53px;
+    font-size: 21px;
+    background-color: #0ab7ce;
+}
+
 @media screen and (max-width:980px){
     .inicio {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.829), rgba(114, 3, 204, 0.829)),
-        url(../img/responsive.jpg); 
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(141, 1, 255, 0.74), rgb(0, 0, 0)),
+        url(../img/responsive.jpg);   
         background-size: cover;
         height: 100vh;
         display: flex;
@@ -327,7 +593,8 @@ footer .arriba{
     nav.responsive ul li{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
-    }      
+    }   
+      
 }
 @media screen and (max-width:700px){
     .sobremi .fila{
@@ -336,6 +603,17 @@ footer .arriba{
     .sobremi .fila .col{
         width: fit-content;
     }
+
+    .habilidades .fila{
+        display: block;
+    }
+    .habilidades .fila .col{
+        width: 100%;
+    }
+    .habilidades .fila .col .barra-habilidad{
+        width: 100%;
+    }
+
     .curriculum .fila{
         display: block;
     }
@@ -344,5 +622,15 @@ footer .arriba{
     }
     .curriculum .fila .derecha{
         margin-left: 20px;
+    }
+    .proyectos .galeria{
+        display: block;
+        width: 100%;
+    }
+    .proyectos .galeria .proyecto{
+        max-width: 100%;
+    }
+    .proyectos .galeria .proyecto img{
+        width: 100%;
     }
 }
