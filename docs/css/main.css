@@ -32,7 +32,7 @@ html{
 }
 .contenedor-header header .logo a:hover{
     color: white;
-    font-size: 31px;
+    transition: 0.5s;
 }
 .contenedor-header header ul{
     display: flex;
@@ -48,7 +48,7 @@ html{
 }
 .contenedor-header header nav ul li a:hover{
     color: #00ffff;
-    font-size: 17px;
+    transition: 1s;
 }
 .nav-responsive{
     background-color: #00ffff;
@@ -86,8 +86,9 @@ html{
 }
 .inicio .contenido-banner img:hover{
     border: 8px solid #00fff2d8;
-    width: 45%;
+    width: 42%;
     border-radius: 100%;
+    transition: 1s;
 }
 .inicio .contenido-banner h1{
     margin-top: 32px;
@@ -116,6 +117,7 @@ html{
 .sobremi h2:hover{
     color: #00ffff;
     font-size: 41px;
+    transition: 1s;
 }
 .sobremi .contenido-seccion p{
     font: 18px;
@@ -175,6 +177,7 @@ html{
 .habilidades h2:hover{
     color: #00ffff;
     font-size: 41px;
+    transition: 1s;
 }
 .habilidades .fila{
     display: flex;
@@ -300,6 +303,7 @@ html{
     100%{width: 94%;}
 }
 .curriculum{
+    margin-top: 60%;
     background-color: #000000;
     color: #fff;
     padding: 50px 20px;
@@ -316,6 +320,7 @@ html{
 .curriculum h2:hover{
     color: #00ffff;
     font-size: 41px;
+    transition: 1s;
 }
 .curriculum .fila{
     display: flex;
@@ -456,6 +461,7 @@ html{
 .proyectos h2:hover{
     color: #00ffff;
     font-size: 41px;
+    transition: 1s;
 
 }
 .proyectos .galeria{
@@ -611,7 +617,7 @@ footer .arriba:hover{
         width: 100%;
     }
     .habilidades .fila .col .barra-habilidad{
-        width: 100%;
+        width: 96%;
     }
 
     .curriculum .fila{
