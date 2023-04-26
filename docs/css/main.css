@@ -83,12 +83,16 @@ html{
     width: 40%;
     margin: auto;
     border-radius: 100%;
+    transition: all 1.5s ease;
+
+
 }
 .inicio .contenido-banner img:hover{
     border: 8px solid #00fff2d8;
     width: 42%;
     border-radius: 100%;
-    transition: 1s;
+    transform: scale(1.30);
+
 }
 .inicio .contenido-banner h1{
     margin-top: 32px;
@@ -107,6 +111,7 @@ html{
 .sobremi .contenido-seccion{
     max-width: 1100px;
     margin: auto;
+    text-align: justify;
 }
 .sobremi h2{
     font-size: 40px;
@@ -254,13 +259,13 @@ html{
     0%{width: 0%;}
     100%{width: 40%;}
 }
-.habilidades .habilidad .react{
+.habilidades .habilidad .scrum{
     width: 0%;
-    animation: 2s react forwards;
+    animation: 2s scrum forwards;
 }
-@keyframes react {
+@keyframes scrum {
     0%{width: 0%;}
-    100%{width: 25%;}
+    100%{width: 80%;}
 }
 .habilidades .habilidad .respuesta{
     width: 0%;
@@ -303,10 +308,12 @@ html{
     100%{width: 94%;}
 }
 .curriculum{
-    margin-top: 60%;
+    margin-top: 6%;
     background-color: #000000;
     color: #fff;
     padding: 50px 20px;
+    text-align: justify;
+
 }
 .curriculum .contenido-seccion{
     max-width: 1100px;
@@ -619,7 +626,9 @@ footer .arriba:hover{
     .habilidades .fila .col .barra-habilidad{
         width: 96%;
     }
-
+    .curriculum {
+        margin-top: 70%;
+    }
     .curriculum .fila{
         display: block;
     }

@@ -26,7 +26,7 @@ function efectoHabilidades(){
         habilidades[1].classList.add("css");
         habilidades[2].classList.add("github");
         habilidades[3].classList.add("javascript");
-        habilidades[4].classList.add("react");
+        habilidades[4].classList.add("scrum");
         habilidades[5].classList.add("respuesta");
         habilidades[6].classList.add("adaptabilidad");
         habilidades[7].classList.add("detalles");
